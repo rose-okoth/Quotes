@@ -9,13 +9,17 @@ import { Quote } from '../quote';
 export class QuoteComponent implements OnInit {
 
   quotes:Quote[] = [
-    {author:'William James', quote:'Act as if what you do makes a difference. IT DOES.', username:''},
-    {author:'Winston Churchill', quote:'Success is not final, failure is not fatal: it is the COURAGE TO CONTINUE that counts.', username:''},
-    {author:'Zig Ziglar', quote:'What you get by achieving your goals is not as important as what you become by achieving your goals.', username:''},    
-    {author:'Theodore Roosevelt', quote:'Believe you can and you are halfway there.',username:''},
-    {author:'William James', quote:'It is our attitude at the beginning of a difficult task which, ore than anything else will affect its successful outcome.', username:''},
-    {author:'Albert Einstein', quote:'Life is like riding a bicycle. To keep your BALANCE, you must keep moving.', username:''},
+    new Quote('William James', 'Act as if what you do makes a difference. IT DOES.', 'Danny Williams'),
+    new Quote('Winston Churchill', 'Success is not final, failure is not fatal: it is the COURAGE TO CONTINUE that counts.', 'Johnny Turturro'),
+    new Quote('Zig Ziglar', 'What you get by achieving your goals is not as important as what you become by achieving your goals.', 'Tripp Vanderbilt'),    
+    new Quote('Theodore Roosevelt', 'Believe you can and you are halfway there.','Rio Christopher'),
+    new Quote('William James', 'It is our attitude at the beginning of a difficult task which, ore than anything else will affect its successful outcome.', 'Nate Archibald'),
+    new Quote('Albert Einstein', 'Life is like riding a bicycle. To keep your BALANCE, you must keep moving.', 'Chuck Bass'),
   ];
+
+  toggleDetails(index: any){
+    this.quotes[index].showAuthor = !this.quotes[index].showAuthor;
+  }
 
   constructor() { }
 
