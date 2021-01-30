@@ -9,12 +9,12 @@ import { Quote } from '../quote';
 export class QuoteComponent implements OnInit {
 
   quotes:Quote[] = [
-    new Quote('William James', 'Act as if what you do makes a difference. IT DOES.', 'Danny Williams'),
-    new Quote('Winston Churchill', 'Success is not final, failure is not fatal: it is the COURAGE TO CONTINUE that counts.', 'Johnny Turturro'),
-    new Quote('Zig Ziglar', 'What you get by achieving your goals is not as important as what you become by achieving your goals.', 'Tripp Vanderbilt'),    
-    new Quote('Theodore Roosevelt', 'Believe you can and you are halfway there.','Rio Christopher'),
-    new Quote('William James', 'It is our attitude at the beginning of a difficult task which, ore than anything else will affect its successful outcome.', 'Nate Archibald'),
-    new Quote('Albert Einstein', 'Life is like riding a bicycle. To keep your BALANCE, you must keep moving.', 'Chuck Bass'),
+    new Quote(1,'C.S Lewis', 'You are never too old to set another goal or to dream a new dream.', 'Danny Williams', new Date(2020,7,28)),
+    new Quote(2, 'Winston Churchill', 'Success is not final, failure is not fatal: it is the courage to continue that counts.', 'Johnny Turturro', new Date(2020,7,28)),
+    new Quote(3,'Zig Ziglar', 'What you get by achieving your goals is not as important as what you become by achieving your goals.', 'Tripp Vanderbilt', new Date(2020,8,28)),    
+    new Quote(4,'Deep Roy', 'Inspiration comes from within yourself. One has to be positive. When you are positive, good things happen.','Rio Christopher', new Date(2020,4,20)),
+    new Quote(5,'William James', 'It is our attitude at the beginning of a difficult task which, ore than anything else will affect its successful outcome.', 'Nate Archibald',new Date(2019,7,28)),
+    new Quote(6,'Maya Angelou', 'Try to be a rainbow in someone elses cloud.', 'Chuck Bass', new Date(2020,5,21))
   ];
 
   toggleDetails(index: any){

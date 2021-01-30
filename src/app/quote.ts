@@ -6,9 +6,11 @@ export class Quote {
     showUsername: boolean;
 
     constructor (
+        public id: number,
         public author: string,
         public quote: string,
         public username: string,
+        public datePosted: Date,
     ) {
         // this.upvote = 0;
         // this.downvote = 0;
