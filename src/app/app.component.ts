@@ -10,7 +10,7 @@ export class AppComponent {
 
   constructor(){
     this.quotes = [
-      'Act as if what tyou do makes a difference. IT DOES.', 
+      'Act as if what you do makes a difference. IT DOES.', 
       'Success is not final, failure is not fatal: it is the COURAGE TO CONTINUE that counts.', 
       'What you get by achieving your goals is not as important as what you become by achieving your goals.',
       'Believe you can and you are halfway there.',
