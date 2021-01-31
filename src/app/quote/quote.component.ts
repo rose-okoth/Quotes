@@ -8,7 +8,7 @@ import { Quote } from '../quote';
 })
 export class QuoteComponent implements OnInit {
 
-  quotes:Quote[] = [
+  quotes: Quote[] = [
     new Quote(1,'C.S Lewis', 'You are never too old to set another goal or to dream a new dream.', 'Danny Williams', new Date(2020,7,28)),
     new Quote(2, 'Winston Churchill', 'Success is not final, failure is not fatal: it is the courage to continue that counts.', 'Johnny Turturro', new Date(2020,7,28)),
     new Quote(3,'Zig Ziglar', 'What you get by achieving your goals is not as important as what you become by achieving your goals.', 'Tripp Vanderbilt', new Date(2020,8,28)),    
@@ -29,6 +29,13 @@ export class QuoteComponent implements OnInit {
 
   toggleDetails(index: any){
     this.quotes[index].showAuthor = !this.quotes[index].showAuthor;
+  }
+
+  addNewQuote(quote: any){
+    let quoteLength = this.quotes.length;
+    quote.id = quoteLength+1;
+    quote.completeDate = new Date(quote.completeDate)
+    this.quotes.push(quote)
   }
 
   constructor() { }
