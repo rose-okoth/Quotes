@@ -2,10 +2,10 @@
   <h1>Inspirational Quotes</h1>
   <hr>
 
-  <div class = 'row'></div>
+  <div class = 'row'>
     <div class = 'col-md-4'>
       <div *ngFor='let quote of quotes;let i = index'>
-        </div>
+        <div>
           <li>{{quote.quote}}</li> posted on {{quote.datePosted}}
           <button (click)='toggleDetails(i)' class="btn btn-primary">Toggle Details</button>
         </div>
