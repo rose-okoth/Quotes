@@ -36,7 +36,7 @@ Rose Okoth.
 ​
 # Live Link
 ​
-SliceOfHeaven Live Link: [Slice Of Heaven](https://rose-okoth.github.io/Quotes/)
+SliceOfHeaven Live Link: [Quotes](https://rose-okoth.github.io/Quotes/)
 ​
 # Contact Information
 
