@@ -13,7 +13,7 @@
 
         <div *ngIf='quote.showAuthor'>
           <app-quote-detail *ngIf='quote.showAuthor' [quote]='quote' (isComplete) = 'quoteDelete'($event, i)></app-quote-detail>
-          <app-quote-detail *ngIf='quote.showUsername' [quote]='quote' (isComplete = 'quoteDelete'($event, i)></app-quote-detail>
+          <app-quote-detail *ngIf='quote.showUsername' [quote]='quote' (isComplete) = 'quoteDelete'($event, i)></app-quote-detail>
         </div>
       </div>
     </div>
@@ -23,30 +23,3 @@
         </div>
   </div>
 </div>
-
-<!-- <div class="card">
-  <div class="card-header">
-    Quote
-  </div>
-  <div class="card-body">
-    <blockquote class="blockquote mb-0">
-      <div *ngFor='let quote of quotes;let i = index'>
-        <div>
-          <li>{{quote.quote}}</li> posted on {{quote.datePosted}}
-          <button (click)='toggleDetails(i)' class="btn btn-primary">Toggle Details</button>
-          <app-quote-detail *ngIf='quote.showAuthor' [quote]='quote'></app-quote-detail>
-        </div>
-
-        <div *ngIf='quote.showAuthor'>
-          <app-quote-detail *ngIf='quote.showAuthor' [quote]='quote' (isComplete) = 'quoteDelete'($event, i)></app-quote-detail>
-          <app-quote-detail *ngIf='quote.showUsername' [quote]='quote' (isComplete) = 'quoteDelete'($event, i)></app-quote-detail>
-        </div>
-      </div>
-    </blockquote>
-  </div>
-</div>
-
-<div class="col-md-4">
-  <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
-</div>  -->
-
