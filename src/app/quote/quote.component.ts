@@ -17,7 +17,11 @@ export class QuoteComponent implements OnInit {
     new Quote(6,'Maya Angelou', 'Try to be a rainbow in someone elses cloud.', 'Chuck Bass', new Date(2020,5,21))
   ];
 
-  deleteQuote(isComplete: any, index: any){
+  toggleDetails(index: any){
+    this.quotes[index].showAuthor = !this.quotes[index].showAuthor;
+  }
+
+  quoteDelete(isComplete: any, index: any){
     if (isComplete) {
       let toDelete = confirm(`Are you sure you want to delete ${this.quotes[index].quote}?`)
 
@@ -27,9 +31,14 @@ export class QuoteComponent implements OnInit {
     }
   }
 
-  toggleDetails(index: any){
-    this.quotes[index].showAuthor = !this.quotes[index].showAuthor;
+  upvote(i: any) {
+    this.quotes[i].upvote ++;
   }
+
+  downvote(i: any) {
+    this.quotes[i].downvote ++;
+  }
+
 
   addNewQuote(quote: any){
     let quoteLength = this.quotes.length;

@@ -5,6 +5,14 @@
     <br>
     Posted: {{quote.datePosted|dateCount}} days ago.
     <br>
-    <button (click)= 'quoteDelete(true)' class="btn btn-primary">Delete</button>
+    Upvote: {{quote.upvote}}
+    <br>
+    Downvote: {{quote.downvote}}
 </p>
-  
+
+<button class="btn btn-primary" (click)='upvote(i)'>Upvote</button>
+
+<button class="btn btn-danger" (click)='downvote(i)'>Downvote</button>
+
+<button class="btn btn-primary" (click)='toDelete(true)'>Delete</button>
+

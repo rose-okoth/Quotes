@@ -1,6 +1,9 @@
 export class Quote {
-    // upvote: number;
-    // downvote: number;
+    splice(index: any, arg1: number) {
+      throw new Error('Method not implemented.');
+    }
+    public upvote: number;
+    public downvote: number;
 
     showAuthor: boolean;
     showUsername: boolean;
@@ -12,8 +15,9 @@ export class Quote {
         public username: string,
         public datePosted: Date,
     ) {
-        // this.upvote = 0;
-        // this.downvote = 0;
+
+    this.upvote = 0;
+    this.downvote = 0;
 
     this.showAuthor = false;
     this.showUsername = false;
